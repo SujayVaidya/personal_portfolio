@@ -1,6 +1,9 @@
 import { CONTACT_URLS } from "@/data";
 import { Button } from "./ui/button";
 import { Mail } from "lucide-react";
+import instagram from "@/assets/instagram.png";
+import x from "@/assets/x.png";
+import LinkedIn from "@/assets/LinkedIn";
 
 export default function Hero() {
   return (
@@ -28,17 +31,34 @@ export default function Hero() {
         </p>
         <div className="mt-8 flex flex-row justify-start items-center gap-3">
           <Button
-            variant={"outline"}
+            asChild
+            variant="outline"
             className="font-medium text-gray-700 dark:text-gray-300 hover:text-purple-500"
           >
-            <a
-              href={
-                "https://drive.google.com/file/d/18nOShhZI3hO1qilGRUSPy3nzL_2vaWVb/view"
-              }
-              target="_blank"
-              className="flex flex-row justify-center items-center gap-2"
-            >
-              View My Resume
+            <a href={CONTACT_URLS.linkedin}>
+              <LinkedIn />
+            </a>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            className="font-medium text-gray-700 dark:text-gray-300 hover:text-purple-500"
+          >
+            <a href={CONTACT_URLS.instagram}>
+              <img
+                src={instagram}
+                alt={`instagram: ${CONTACT_URLS.instagram}`}
+                className=" h-6 w-6"
+              />
+            </a>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            className="font-medium text-gray-700 dark:text-gray-300 hover:text-purple-500"
+          >
+            <a href={CONTACT_URLS.x}>
+              <img src={x} alt={`x: ${CONTACT_URLS.x}`} className=" h-6 w-6" />
             </a>
           </Button>
           <Button
@@ -55,4 +75,22 @@ export default function Hero() {
       </div>
     </section>
   );
+}
+
+// VIEW MY RESUME BUTTON
+{
+  /* <Button
+            variant={"outline"}
+            className="font-medium text-gray-700 dark:text-gray-300 hover:text-purple-500"
+          >
+            <a
+              href={
+                "https://drive.google.com/file/d/18nOShhZI3hO1qilGRUSPy3nzL_2vaWVb/view"
+              }
+              target="_blank"
+              className="flex flex-row justify-center items-center gap-2"
+            >
+              View My Resume
+            </a>
+          </Button> */
 }

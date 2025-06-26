@@ -10,12 +10,13 @@ import mui from "./assets/skills/mui.png";
 import tailwindCss from "./assets/skills/tailwind-css.png";
 import aws from "./assets/skills/aws.png";
 import firebase from "./assets/skills/firebase.png";
-import vscode from "./assets/skills/vscode.png";
+// import vscode from "./assets/skills/vscode.png";
 import capacitorJs from "./assets/skills/capacitor-js.png";
 import nodejs from "./assets/skills/node-js.png";
 import mysql from "./assets/skills/mysql.png";
 import mongodb from "./assets/skills/mongodb.png";
 import express from "./assets/skills/express-js.png";
+import angular from "./assets/skills/angular.png";
 export interface Experience {
   title: string;
   company: string;
@@ -34,9 +35,17 @@ export interface Project {
 
 export const experience: Experience[] = [
   {
+    title: "Associate Software Developer",
+    company: "ZentrumHub",
+    date: " June 2025 - present",
+    bullets: [
+      "Currently working as Associate Software Developer at ZentrumHub.",
+    ],
+  },
+  {
     title: "Frontend Engineer",
     company: "Anveshak Technology and Knowledge Solutions",
-    date: "December 2022 – Present",
+    date: "December 2022 - May 2025",
     bullets: [
       "Delivered 4+ responsive and performant web/mobile apps using React.js and React Native, featuring role-based access control, offline support (AWS DataStore) and chatbot interfaces powered by AWS Amplify, GraphQL, S3, and DynamoDB.",
       "Improved app performance by 40% using Core Web Vitals; implemented code-splitting, lazy loading, and memoization (React.memo, useMemo) to optimize load times and API efficiency.",
@@ -74,6 +83,8 @@ export const CONTACT_URLS = {
   email: "mailto:sujayvaidya4@gmail.com",
   linkedin: "https://linkedin.com/in/sujayvaidya",
   github: "https://github.com/SujayVaidya",
+  instagram: "https://www.instagram.com/sujayvaidya16",
+  x: "https://x.com/sujayvaidya2",
 };
 
 interface SkillType {
@@ -91,7 +102,7 @@ export const skills: SkillType[] = [
   { name: "Tailwind CSS", src: tailwindCss },
   { name: "AWS", src: aws },
   { name: "Firebase", src: firebase },
-  { name: "VSCode", src: vscode },
+  { name: "Angular", src: angular },
   { name: "Capacitor JS", src: capacitorJs },
   { name: "Node JS", src: nodejs },
   { name: "Express JS", src: express },

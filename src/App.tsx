@@ -7,6 +7,7 @@ import { Button } from "./components/ui/button";
 import Hero from "./components/Hero";
 import SkillsSection from "./components/Skills";
 import Footer from "./components/Footer";
+// import { BackgroundBeams } from "./components/ui/background-beams";
 
 const SECTION_IDS = ["home", "skills", "experience", "projects"] as const;
 type SectionID = (typeof SECTION_IDS)[number];
@@ -88,6 +89,7 @@ export default function App() {
           <Footer />
         </section>
       </main>
+      {/* <BackgroundBeams /> */}
     </div>
   );
 }

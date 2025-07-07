@@ -1,5 +1,7 @@
 import meetups from "./assets/MeetupsBySV.png";
 import techies from "./assets/TechiesBySV.png";
+import nullBrains from "./assets/nullBrains.png";
+import cartSwiper from "./assets/cartSwiper.png";
 import html5 from "./assets/skills/html-5.png";
 import css from "./assets/skills/css.png";
 import js from "./assets/skills/js.png";
@@ -77,8 +79,27 @@ export const projects: Project[] = [
     liveUrl: "https://meetupbysv.netlify.app/",
     repoUrl: "https://github.com/SujayVaidya/svmart",
   },
+  {
+    title: "nullBrains - A landing page",
+    description:
+      "A fully responsive landing page clone built from a Figma design, focusing on layout accuracy and clean UI implementation using React and TypeScript. Styled with plain CSS for complete control over design and responsiveness.",
+    tech: ["React.ts", "CSS", "vite"],
+    liveUrl: "https://nullbrains-sv.netlify.app/",
+    repoUrl: "https://github.com/SujayVaidya/nullbrains-landing-clone",
+    img: `${nullBrains}`,
+  },
+  {
+    title: "Cart Swiper - React + Capacitor Android App",
+    description:
+      "A PWA-style web app built with React and Vite, then seamlessly wrapped into a native Android application using Capacitor.js. Demonstrates cross-platform deployment and integration between web and mobile environments.",
+    tech: ["React.ts", "tailwind CSS", "Capacitor", "vite"],
+    liveUrl: "https://cart-swiper.netlify.app/",
+    repoUrl: "https://github.com/SujayVaidya/React-Capacitor-Project",
+    img: `${cartSwiper}`,
+  },
 ];
 
+//
 export const CONTACT_URLS = {
   email: "mailto:sujayvaidya4@gmail.com",
   linkedin: "https://linkedin.com/in/sujayvaidya",
